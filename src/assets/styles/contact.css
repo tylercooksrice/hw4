@@ -120,7 +120,7 @@ main form {
     }
 
     input:invalid + output::after {
-        /*content: "This field is required";*/
+        content: "This field is required";
         visibility: visible;
         color: red;
         font-size: 0.9em;
@@ -128,7 +128,7 @@ main form {
     }
 
     input:valid + output::after {
-        /*content: "This field is required."; /* Keep the same content */
+        content: "This field is required."; /* Keep the same content */
         visibility: hidden;
     }
 
