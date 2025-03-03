@@ -1,0 +1,20 @@
+.toggle-content {
+    opacity: 0; /* Initially invisible */
+    height: 0; /* Initially no height */
+    overflow: hidden; /* Hide the content when collapsed */
+    transition: opacity 0.5s ease, height 0.5s ease; /* Smooth transition */
+}
+
+.toggle-content.show {
+    opacity: 1; /* Make it visible */
+    height: auto; /* Expand to its natural height */
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+}

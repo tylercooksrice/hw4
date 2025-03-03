@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Tyler/AppData/Local/Temp/669cb59b-de67-49bf-a670-ebc33bedde22_hw2-windows.zip.e22/src",
+      "program": "c:/Users/Tyler/AppData/Local/Temp/669cb59b-de67-49bf-a670-ebc33bedde22_hw2-windows.zip.e22/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+:root {
+	--primary-universal-color: white;
+	--off-white: rgb(250, 249, 246);
+	--cream-color: color(display-p3 1.0 0.98 0.85);
+	--primary-color: #FAF9F6;
+	--dark-color: hsl(260 20% 10% / 0.95);
+}
+
+@font-face { 
+	font-family: Poppin; 
+	src: url('../public/fonts/Poppins/Poppins-Thin.ttf'); 
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+} 
+
+@font-face {
+	font-family: Proxima-Nova; 
+	src: url('../public/fonts/Proxima%20Nova/proximanova_regular.ttf'); 
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Matches the width of the text */
+    }
+}
+
+@keyframes blink {
+	from, to { border-color: transparent }
+  	50% { border-color: white; }
+}
+
+@keyframes scroll-animation {
+	to {
+		scale: 1; opacity: 1;
+		box-shadow: 0px 0px;
+	}
+}
+
+body {
+	font-family: Poppin, sans-serif, Helvetica;
+	min-height: 100vh;
+    margin: 0%;
+	padding: 0%;
+	display: flex;
+    flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {	
+	bottom: 0;
+	margin-top: auto;
+	position: static;
+	width: auto;
+	color: var(--primary-universal-color);
+	background: hsl(260 20% 10% / 0.95);
+    padding: 1rem; 
+	flex-wrap: nowrap;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1%;
+}
+
+footer nav a {
+	color: var(--primary-universal-color);
+	flex-wrap: nowrap;
+	text-align: center;
+	margin-right: 1%; 
+}	
+
+footer form {
+	float: right;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-family: Poppin, sans-serif, Helvetica;
+		font-size: small;
+		min-height: 100vh;
+		margin: 0%;
+		padding: 0%;
+		display: flex;
+    	flex-direction: column;
+	}
+
+	footer {
+		bottom: 0;
+		margin-top: auto;
+	}
+
+	footer nav {
+		justify-content: center;
+		justify-content: space-around;
+	}
+}
